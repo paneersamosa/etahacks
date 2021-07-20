@@ -1,0 +1,281 @@
+/* HTML */
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+    background: #FCECDD;
+    background-image: url(images/Cloud.png);
+    background-size: 90%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+p {
+    font-family: 'Poppins Medium', sans-serif;
+    font-size: 18px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: justify;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Dalek';
+    src: url(fonts/Dalek\ Pinpoint.ttf) format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url(fonts/Poppins.ttf) format('truetype');
+    font-weight: medium;
+}
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url(fonts/Poppins-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+/* Navbar CSS */
+nav {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo {
+    font-family: 'Dalek', sans-serif;
+    font-size: 55px;
+    margin-left: 70px;
+}
+nav .logo a{
+    text-decoration: none;
+    color: white;
+}
+.nav-container {
+    background-color: #FEA82F;
+    padding: 15px;
+    height: max-content;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.wrapper {
+    max-width: 100%;
+}
+nav ul {
+    display: flex;
+}
+nav li {
+    list-style: none;
+    margin-right: 75px;
+    text-decoration: none;
+}
+.nav-items li a {
+    color: white;
+    font-family: 'Poppins Medium';
+    font-size: 20px;
+    text-decoration: none;
+}
+.nav-items li a:hover {
+    animation: navbarlinkhover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes navbarlinkhover {
+    100% {
+        color: #FF6701;
+    }
+}
+.logo a:hover {
+    animation: navlogohover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes navlogohover {
+    100% {
+        color: #FCECDD;
+    }
+}
+.join-button {
+    background-color: #FF6701;
+    position: relative;
+    top: -5px;
+    margin-top: 0;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+.join-button:hover {
+    animation-name: joinlinkhover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes joinlinkhover {
+    100% {
+        background-color: #FEA82F;
+        color: #FF6701;
+    }
+}
+
+/* Header */
+.hero-content {
+    margin: 25px 75px 0px 75px;
+    margin-top: 150px;
+}
+.intro {
+    font-family: 'Dalek';
+    font-size: 75px;
+    color: #FF6701;
+}
+.mini-intro {
+    line-height: 50%;
+}
+header {
+    display: flex;
+}
+img.hero-image {
+    width: 250px;
+    height: auto;
+    position: relative;
+    margin-top: 150px;
+    z-index: 2;
+}
+
+/* About Us */
+.wave {
+    display: block;
+    width: 100%;
+    left: 0;
+    margin-bottom: 0;
+    margin-top: -75px;
+    position: relative;
+    z-index: 1;
+}
+.aboutuscontainer {
+    background-color: #FFC288;
+    background-size: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    left: 0;
+    padding-bottom: 30px;
+}
+.aboutustitle {
+    margin: 0;
+    font-family: 'Dalek';
+    font-size: 65px;
+    text-align: center;
+    color: #FCECDD;
+}
+.aboutusdescription {
+    margin-left: 175px;
+    margin-right: 175px;
+    color: black;
+    text-align: justify;
+}
+.detailboxes {
+    display: flex;
+    align-items: center;
+    margin-right: 300px;
+    margin-left: 300px;
+    justify-content: space-between;
+}
+.detailboxes li {
+    font-family: 'Poppins Medium';
+    line-height: 20px;
+    text-decoration: none;
+}
+.detailboxes h3 {
+    font-family: 'Dalek';
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 25px;
+    align-items: center;
+    text-align: center;
+    color: #FCECDD;
+}
+.benefitsdesc {
+    background-color: #FFC288;
+    padding: 25px 25px 25px 45px;
+    border-style: solid;
+    border-color: #FCECDD;
+    border-width: 2px;
+    border-radius: 25px;
+}
+.experiencedesc {
+    background-color: #FFC288;
+    padding: 25px 25px 25px 45px;
+    border-style: solid;
+    border-color: #FCECDD;
+    border-width: 2px;
+    border-radius: 25px;
+}
+
+/* Theme Section */
+.themetitle {
+    font-family: 'Dalek';
+    font-size: 65px;
+    text-align: center;
+    color: #FF6701;
+    margin-bottom: 5px;
+}
+.themeitself {
+    font-family: 'Dalek';
+    font-size: 50px;
+    color: #FFC288;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.themedesc {
+    margin-left: 175px;
+    margin-right: 175px;
+}
+.trackboxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.trackone {
+    position: relative;
+}
+.trackonetitle {
+    font-family: 'Dalek';
+    font-size: 55px;
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    color: #FF6701;
+}
+img.tbplaceholderone {
+    width: 500px;
+    height: auto;
+    z-index: 1;
+    margin-left: 150px;
+}
+.tracktwo {
+    position: relative;
+}
+.tracktwotitle {
+    font-family: 'Dalek';
+    font-size: 55px;
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    color: #FF6701;
+}
+img.tbplaceholdertwo {
+    width: 500px;
+    height: auto;
+    z-index: 1;
+    margin-right: 150px;
+}
+/* Resizing */
+@media screen and (max-width: 1050px) {
+    .logo {
+        font-size: 25px;
+    }
+    
+}
